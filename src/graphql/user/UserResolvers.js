@@ -5,7 +5,7 @@ import postResolvers from '../posts/PostResolvers';
 import type { UserType, UserConnection, UserAuth } from './UserTypes';
 import type { Context } from '../TypeDefinitions';
 
-type UserAdd = {
+type createUser = {
   email: string,
   name: string,
   password: string,
@@ -83,7 +83,7 @@ const userResolvers: Object = {
     };
   },
 
-  userAdd: async (obj: UserType, args: UserAdd): Promise<?UserAuth> => {
+  createUser: async (obj: UserType, args: createUser): Promise<?UserAuth> => {
     const { email, name, password } = args;
 
     if (!email || !name || !password) {

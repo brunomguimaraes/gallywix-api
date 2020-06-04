@@ -22,6 +22,10 @@ const Schema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
+    isAdmin: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: {
@@ -32,6 +36,7 @@ const Schema = new mongoose.Schema(
   },
 );
 
+// eslint-disable-next-line func-names
 Schema.pre('save', function (next) {
   // Hash the password
   if (this.isModified('password')) {

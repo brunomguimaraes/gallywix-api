@@ -24,7 +24,7 @@ const queryTypes: string = gql`
   }
 
   type Mutation {
-    userAdd(name: String!, email: String!, password: String!): UserAuth
+    createUser(name: String!, email: String!, password: String!): UserAuth
     login(email: String!, password: String!): UserAuth
     postAdd(title: String!, description: String!): Post
   }

@@ -6,6 +6,7 @@ export type UserType = {
   name: string,
   email: string,
   active: boolean,
+  isAdmin: boolean,
 };
 
 export type UserConnection = {
@@ -23,6 +24,7 @@ const userType: string = gql`
     name: String
     email: String
     active: Boolean
+    isAdmin: Boolean
     posts(search: String, first: Int!, after: Int): PostConnection
   }
   type UserConnection {
