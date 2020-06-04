@@ -30,6 +30,6 @@ import { getUser } from './graphql/auth';
   server.setGraphQLPath('graphql');
   server.listen(graphqlPort).then(({ url }) => {
     console.log(`🚀 Apollo server ready on ${url}`);
-    console.log('⚡️ Playground exposed on /graphql');
+    console.log(`⚡️ Playground exposed on ${url}graphql`);
   });
 })();

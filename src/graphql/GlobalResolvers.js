@@ -16,7 +16,7 @@ const globalResolvers: ResolversType = {
     posts: postResolvers.posts,
   },
   Mutation: {
-    userAdd: userResolvers.userAdd,
+    createUser: userResolvers.createUser,
     login: userResolvers.login,
     postAdd: postResolvers.postAdd,
   },
