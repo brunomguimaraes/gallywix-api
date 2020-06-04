@@ -1,8 +1,8 @@
 {
-  "name": "apollo-server-boilerplate",
+  "name": "gallywix-api",
   "version": "1.0.0",
-  "description": "apollo server es6 boilerplate",
-  "author": "lXSPandora",
+  "description": "Jastor Gallywix is the former Trade Prince of the Bilgewater Cartel, one of the most powerful goblin trade guilds on Kezan. ",
+  "author": "Bruno Guimarães",
   "license": "MIT",
   "private": true,
   "devDependencies": {
